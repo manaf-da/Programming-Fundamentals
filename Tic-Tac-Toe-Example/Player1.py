@@ -1,5 +1,5 @@
 # Player1.py
-#
+#test
 # author: Stephen Adams
 # date  : 2024-10-19
 #
@@ -16,7 +16,7 @@ def getValue( board, position ):
 def getMove(board):
     """
     Determines the next move for Player 1. Player 1 will always be 'X'.
-    
+
     Since studnets will not have yet learned lists, we will use indicies 1-9 to represent the Tic-Tac-Toe board as follows:
 
         1 | 2 | 3
@@ -33,7 +33,7 @@ def getMove(board):
     Returns:
     integer: The index of the next move between 1 and 9.
     """
-    
+
     # Example of checking for a win in the top row.
     if ( getValue( board, 1 ) == "X" and getValue( board, 2 ) == "X" and getValue( board, 3 ) == " " ):
         return 3
